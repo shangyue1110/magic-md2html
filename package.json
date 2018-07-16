@@ -1,6 +1,6 @@
 {
   "name": "magic-md2html",
-  "version": "1.0.0",
+  "version": "1.0.1git ",
   "description": "create html from markdown file with configuration",
   "main": "index.js",
   "scripts": {
@@ -16,6 +16,10 @@
   ],
   "author": "varlinor varlinor@hotmail.com",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shangyue1110/magic-md2html.git"
+  },
   "devDependencies": {
     "marked": "^0.4.0",
     "plugin-error": "^1.0.1",

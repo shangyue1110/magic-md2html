@@ -122,7 +122,7 @@ module.exports = (options)=>{
                     metaInfo=`
 <meta name="generator" content="magic-md2html" />
 <meta http-equiv="content-language" content="en-US,zh-CN" />
-<meta name="author" content="${localOpts.metaInfo.author || '{{}}'}" />
+<meta name="author" content="${localOpts.metaInfo.author || '{{author}}'}" />
 <meta name="keywords" content="${tagInfos[1]}" />
 <meta name="description" content="{{description}}" />
 <meta http-equiv="date" content="${new Date()}" />
@@ -142,13 +142,19 @@ module.exports = (options)=>{
                     mdInfo=mdInfo.replace(tagInfos[0],tagLabelWrap);
                 }
 
-                //  替换 TOC
+                //  提取所有h1-h3
                 let titleArr=mdInfo.match(Mcfg.TitleRegex),
                     h1Title=titleArr.shift(),
                     h1TitleReg=Mcfg.TitleContentRegex.exec(h1Title),
-                    h1Content=h1TitleReg.length==2 ? h1TitleReg[1]:'未命名-'+h1Title,
-                    titleHtml=parseToC(titleArr);
-                mdInfo=mdInfo.replace(Mcfg.ToCTag,titleHtml);
+                    h1Content=h1TitleReg.length==2 ? h1TitleReg[1]:'未命名-'+h1Title;
+
+                //  替换 TOC
+                if(localOpts.enableToC){
+                    let titleHtml=parseToC(titleArr);
+                    mdInfo=mdInfo.replace(Mcfg.ToCTag,titleHtml);
+                }
+
+
 
                 //  替换正文
                 htmlTmp = htmlTmp.replace(Mcfg.TemplateDef.Content, mdInfo)
