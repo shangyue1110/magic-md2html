@@ -22,9 +22,9 @@ module.exports= (() => ({
         buildTemplate:false,
         enableToC:false,
         templatePath:'',
+        cssFilePath:'',
         extraScriptPath:'',
         footerPath:'',
-        cssFilePath:'',
         markedOptions:{},
         metaInfo:{
             author:'',

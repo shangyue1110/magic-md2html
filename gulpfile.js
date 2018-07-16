@@ -17,9 +17,9 @@ let config=Object.assign({
         buildTemplate:false,
         templatePath:'./test/index.template.html',
         releasePath:'./dist',
+        cssFilePath:'./test/attachfiles/css.txt',
         extraScriptPath:'./test/attachfiles/extraScript.txt',
         footerPath:'./test/attachfiles/footer.txt',
-        cssFilePath:'./test/attachfiles/css.txt',
         metaInfo:{
             author:'varlinor@hotmail.com',
             copyright:'varlinor © '

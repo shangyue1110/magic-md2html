@@ -161,3 +161,34 @@ Inline level renderer methods
 - image(*string* href, *string* title, *string* text)
 - text(*string* text)
 ```
+
+## Some Ideas
+
+Originally, I think perhaps I should set css class as variables in this configuration, just like format below:
+```
+options={
+    ...
+    tagClassDef:{
+        blockquoteClass:'',
+        hrClasss:'',
+        olClass:'',
+        ulClass:'',
+        pClass:'',
+        tableClass:'',
+        strongClass:'',
+        aClass:'',
+        emClass:'',
+        spanClass:'',
+        imgClass:'',
+        delClass:'',
+    }
+}
+```
+
+but, I think that's so stupid to do this.
+Everyone can set their own styles, why should I limited the html format which transformed by `marked`.
+
+## To User
+
+This tool may not be so perfect to generate such a beautiful html pages, it comes from an idea by suddenly,
+it is simple, but just matches my requirement. if you have some ideas for it, please let me know, thank you!
