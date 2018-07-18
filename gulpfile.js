@@ -14,9 +14,11 @@ let config=Object.assign({
     DocRex:'./test/docs/**/*.md',
     ReleaseDir:'./dist/',
     options:{
-        buildTemplate:false,
+        debugMode:false,
+        buildTemplate:true,
+        enableToC:true,
         templatePath:'./test/index.template.html',
-        releasePath:'./dist',
+        releasePath:'./dist/',
         cssFilePath:'./test/attachfiles/css.txt',
         extraScriptPath:'./test/attachfiles/extraScript.txt',
         footerPath:'./test/attachfiles/footer.txt',

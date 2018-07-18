@@ -1,27 +1,120 @@
-# This is a test markdown file
+# H1
+
+>CreateTime:2018年7月18日
 
 <tag label="test,测试,md,magicMd2Html,parser">
 
 <ToC>
 
->time时间
->>test
+## H2
 
-## step one
+### H3
 
-* [bing](https://cn.bing.com)
-* 测试list
+#### H4
 
-## list
+##### H5
+
+###### H6
+
+## List
+
+### &lt;ul&gt;
+
+* 测试一级
+  * 测试二级
+  * 测试二级
+    * 测试三级
+    * 测试三级
+  * 测试二级
+* 测试一级
+
+### &lt;ol&gt;
 
 1. `你好`
-2. what's u name?
+  1. hi
+  2. Helo
+   1. hello
+   2. happy
+  3. why?
+2. 真的
+3. what's u name?
+
+### mix &lt;ul&gt; & &lt;ol&gt;
+
+1. 1
+  * 1.1
+    1. 1.1.1
+    2. 1.1.2
+    3. 1.1.3
+  * 1.1.3.1
+  * 1.1.3.2
+    4. 1.1.4
+  * 1.2
+2. 2
+3. 3
+4. 4
+
+### &lt;dl&gt;
 
 ```
-// 这里是真的代码了把
+<dl>
+    <dt>name</dt>
+    <dd>the description of name</dd>
+    <dt>age</dt>
+    <dd>the description of age</dd>
+    <dt>alias</dt>
+    <dd>别名</dd>
+</dl>
+```
+<dl>
+    <dt>name</dt>
+    <dd>the description of name</dd>
+    <dt>age</dt>
+    <dd>the description of age</dd>
+    <dt>alias</dt>
+    <dd>别名</dd>
+</dl>
+
+<hr>
+
+```
+<dl class="magic-dl-flat">
+    <dt>name</dt>
+    <dd>the description of name</dd>
+    <dt>age</dt>
+    <dd>the description of age</dd>
+    <dt>alias</dt>
+    <dd>别名</dd>
+</dl>
+```
+<dl class="magic-dl-flat">
+    <dt>name</dt>
+    <dd>the description of name</dd>
+    <dt>age</dt>
+    <dd>the description of age</dd>
+    <dt>alias</dt>
+    <dd>别名</dd>
+</dl>
+
+## Blockquote
+
+>引用内容
+>>再次引用
+>>>第三次引用
+>>回到上级
+>bye!
+
+## code
+
+>暂未提供代码高亮的相关调用 ( Code highlight hasn't supported now. you can do it your self!)
+
+by &#x60;&#x60;&#x60;
+
+```
+// 这里是真的代码了吧
 const hi (name)=> 'say hello!'+name
 ```
-### 其他
+by tab
 
     123
     你好
@@ -29,23 +122,35 @@ const hi (name)=> 'say hello!'+name
     我知道你在干嘛
     Hello New York
 
-### 也是一个锻炼
+## line inner element
 
-*That's true*  
-__也许是个好消息__  
-~~也许不是~~
+* italic&nbsp;&nbsp;&nbsp;*That's true*
+* bold&nbsp;&nbsp;&nbsp;__也许是个好消息__
+* delete&nbsp;&nbsp;&nbsp;~~也许不是~~
+
+## link
+
+[测试链接](https://www.npmjs.com/package/magic-md2html)
 
 ## 图片
 
-![file](http://www.mrsmandarin.co.uk/wp-content/uploads/2013/07/Nihao.png)
+![file](../test/attachfiles/magic.jpg)
+
+![image online](https://i2.kym-cdn.com/entries/icons/original/000/012/686/Magic-Book-Wallpaper.jpg)
 
 ## 表格
 
-|  `name`  | `age` | `sex`  |
+|  name  | age | sex  |
 | -------- |-------|:--:|
-|  alex    |   12  | F |
-| alice    |   10  | M |
+|  Alex    |   12  | F |
+| Alice    |   10  | M |
+| Angerlus    |   17  | F |
+| Eric    |   12  | F |
+| Down    |   11  | F |
 
+## hr
+
+<hr>
 
 
 

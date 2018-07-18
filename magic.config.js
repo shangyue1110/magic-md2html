@@ -19,6 +19,7 @@ module.exports= (() => ({
         Footer:'{{footer}}'
     },
     Def_Config_format:{
+        debugMode:false,
         buildTemplate:false,
         enableToC:false,
         templatePath:'',
@@ -29,21 +30,6 @@ module.exports= (() => ({
         metaInfo:{
             author:'',
             copyright:''
-        },
-        tagClassDef:{
-            blockquoteClass:'',
-            hrClasss:'',
-            olClass:'',
-            ulClass:'',
-            pClass:'',
-            tableClass:'',
-            strongClass:'',
-            aClass:'',
-            emClass:'',
-            spanClass:'',
-            imgClass:'',
-            delClass:'',
-
         }
     }
 

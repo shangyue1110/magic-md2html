@@ -1,5 +1,9 @@
 # magic-md2html
 
+>something you want to know quickly:
+>>[5 minutes user guide](https://github.com/varlinor/magic-md2html/wiki/5-minutes-User-guide)
+>>[ChangeLog](https://github.com/varlinor/magic-md2html/wiki/Change-Log)
+
 Based on [marked](https://www.npmjs.com/package/marked);
 
 Use marked.Renderer to control html class
@@ -42,6 +46,10 @@ you can use them as simple as possible, just like this:
 
 of course, you need your own style file to control how ToC and labels display.
 
+>for example, I write some css for them, you can add see them at `test.html` ( refer to `test/base.css`),
+>it contains full css for content from md file.
+>>PS:I will share this theme soon~
+
 ## html template fields
 
 `{{meta}}` means where to replaced meta info in html, used to SEO information.
@@ -65,6 +73,7 @@ Also, this field will be replaced with content in pointed extra file, refer to c
 
 ## Configuration
 
+    debugMode:false,
     buildTemplate: false, 
     enableToC:false,
     templatePath:'',
@@ -76,6 +85,10 @@ Also, this field will be replaced with content in pointed extra file, refer to c
         copyright:''
     }
     markedOptions:{},
+
+### debugMode
+
+bool, default is false, to control whether output debug info in console.
 
 ### buildTemplate
 
