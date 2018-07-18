@@ -3,6 +3,7 @@
 >something you want to know quickly:
 >>[5 minutes user guide](https://github.com/varlinor/magic-md2html/wiki/5-minutes-User-guide)
 >>[ChangeLog](https://github.com/varlinor/magic-md2html/wiki/Change-Log)
+>>magic-md2html default stylesheets [refer to](https://github.com/varlinor/magic-style)
 
 Based on [marked](https://www.npmjs.com/package/marked);
 
@@ -48,7 +49,7 @@ of course, you need your own style file to control how ToC and labels display.
 
 >for example, I write some css for them, you can add see them at `test.html` ( refer to `test/base.css`),
 >it contains full css for content from md file.
->>PS:I will share this theme soon~
+>>PS: the stylesheets in test.html >> [magic-style](https://github.com/varlinor/magic-style)
 
 ## html template fields
 
