@@ -1,9 +1,9 @@
 # magic-md2html
 
 >something you want to know quickly:
->>[5 minutes user guide](https://github.com/varlinor/magic-md2html/wiki/5-minutes-User-guide)
->>[ChangeLog](https://github.com/varlinor/magic-md2html/wiki/Change-Log)
->>magic-md2html default stylesheets [refer to](https://github.com/varlinor/magic-style)
+>>[5 minutes user guide](https://github.com/varlinor/magic-md2html/wiki/5-minutes-User-guide)  
+>>[ChangeLog](https://github.com/varlinor/magic-md2html/wiki/Change-Log)  
+>>magic-md2html default stylesheets [refer to](https://github.com/varlinor/magic-style)  
 
 Based on [marked](https://www.npmjs.com/package/marked);
 
